@@ -3,11 +3,9 @@ Title: Home
 Description: This is our index page.
 ---
 
-Home page
-==========================
+Välkommen till studentens sida!
+===============================
 
-The source for this page is in `content/index.md`.
+Studenten är en kvinna som är nyfiken på webbdesign. Därför går hon under hösten 2022 kursen "Teknisk webbdesign och användbarhet" på Blekinge Tekniska Högskola. När studenten inte lär sig webbdesign ägnar hon sig åt sina övriga intressen som bland annat är samhällsfrågor, djur och natur.
 
-This is a sample home page written in markdown with some frontmatter defined.
-
-![tree] (%base_url%/assets/img/tree2.jpg)
+![weekend](%assets_url%/img/weekend.png){.weekend}

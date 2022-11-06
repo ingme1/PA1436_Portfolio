@@ -30,6 +30,7 @@ body {
 
 .main {
     flex: 1 0 auto;
+    margin: 2em;
 }
 
 .header, .footer {
@@ -46,7 +47,7 @@ body {
 /* Title */
 
 .title, .logo {
-    padding: 3em 3em 3em 0;
+    padding: 1em 3em 1em 0;
 }
 
 @media (max-width: 767px) {
@@ -70,8 +71,9 @@ body {
 }
 
 .logo {
-  height: 8em;
-  width: 8em;
+  height: 24em;
+  width: 24em;
+  margin-left: 2em;
 }
 
 /* Footer */
@@ -80,6 +82,7 @@ body {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #222;
+    margin: 2em;
 }
 
 .footer a {
@@ -110,13 +113,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 img {
-    max-width: 100%;
+    max-width: 80%;
+    height: 34%;
+    margin-left: 2em;
 }
 
-flash-img {
-    max-width: 40%;
-    max-height: 10rem;
+.flashimg {
+    margin-top: 0;
 }
+
+.weekend {
+    width: 15%;
+    height: 15%;
+    margin-left: 20em;
+    padding: 1em;
+}
+
 
 /* BELOW ARE PREPARED STYLES FOR CODE/PRE/BLOCKQUOTE, FEEL FREE TO REMOVE IT  */
 
