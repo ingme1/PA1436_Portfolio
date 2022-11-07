@@ -6,6 +6,6 @@ Social:
       url: https://github.com/dbwebb-se/design-v3
       icon: github
     - title: Link till mitt github repo.
-      url: https://github.com/ingme2/PA1436-TekniskWebbdesign
+      url: https://github.com/ingme1/PA1436_Portfolio
       icon: star
 ---
