@@ -6,8 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lora&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -310,47 +309,25 @@ template {
   display: none;
 }
 
-/**
- * Grunden, baserad på Typography Handbook.
- */
+/* Detta är en multiplikator, därav ingen enhet */
 html {
   font-size: 100%;
-  width: 100%;
-  /* Dvs här behålls den fontstorlek användaren valt i sin webbläsare.*/
 }
 
 body {
-  line-height: 1.45;
-  /*Radavstånd bör vara mellan 1.2-1.5 av radhöjden. Anges som multipel.*/
-}
-
-li .active {
-  color: #ee6c4d;
+  line-height: 1.4;
 }
 
 h1 {
-  font-size: 2.75rem;
-  font-family: "Noto Sans", sans-serif;
+  font-size: 3em;
+  margin-bottom: 1.54em;
+  font-family: "Inter", sans-serif;
 }
 
 p {
-  font-size: 1.1rem;
-  /* em = i förhållande till förälder-element. Bör ej avvika för mkt från 1. 
-  Om man angett i px skulle inte användaren kunnat styra storleken.*/
-  margin-bottom: 1.595rem;
-  /* Ger avståndet mellan styckena.*/
-  font-family: "Roboto Slab", serif;
-}
-
-.main {
-  max-width: 60rem;
-  padding-left: 1.5rem;
-  /* rem = i förhållande till root-elementet, dvs html. */
-  padding-right: 1.5rem;
-  margin: 0 auto;
-  /* Anger här först top-bottom, sedan vänster-höger marginaler.*/
-  color: #333;
-  margin-bottom: 3.19rem;
+  font-size: 1.1em;
+  margin-bottom: 1.54em;
+  font-family: "Lora", serif;
 }
 
 @media (min-width: 64em) {
@@ -358,12 +335,19 @@ p {
     font-size: 112.5%;
   }
 }
-/* Läggs ganska högt i listan eftersom påverkar generellt */
+.main {
+  max-width: 67rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: 0 auto;
+}
+
 blockquote {
   font-style: italic;
   margin-left: 1em;
   padding-left: 1em;
   border-left: 0.5em solid #f5f5f5;
+  margin-bottom: 1.54em;
 }
 
 code {
@@ -394,93 +378,10 @@ pre code {
   line-height: 1.4;
 }
 
-.slide {
-  overflow-y: hidden !important;
-  transition: height 0.5s ease-in !important;
+body {
+  background-color: #3d5a80;
 }
 
-.nav ul {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1em 0;
-  list-style: none;
-}
-
-.nav ul li {
-  padding: 0 1em;
-}
-
-.nav a,
-.nav-toggle {
-  color: #333;
-}
-
-.nav-toggle {
-  display: none;
-}
-
-@media (max-width: 767px) {
-  .header {
-    flex-direction: column;
-  }
-  .nav ul {
-    flex-direction: column;
-    padding-bottom: 1em;
-  }
-  .nav ul li {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .nav ul li a {
-    display: block;
-    padding: 0.5em 0;
-  }
-  .js .nav-toggle {
-    display: block;
-    float: right;
-    width: 2em;
-    margin: 0.6667em 0;
-    font-size: 1.5rem;
-    line-height: 2em;
-    text-align: center;
-    cursor: pointer;
-  }
-}
-/**
-*
-*/
-.title h1 {
-  color: #ee6c4d;
-  margin: 0.2rem;
-}
-
-.title p {
-  color: #333;
-  margin-bottom: 0.2rem;
-}
-
-.nav ul {
-  margin: 0.2rem;
-  padding: 0 auto;
-}
-
-.nav .active {
-  color: #ee6c4d;
-}
-
-.flashimg {
-  width: 100%;
-  height: 225px;
-}
-
-.workday {
-  width: 30%;
-  height: 30%;
-  margin: 0 30%;
-  margin-bottom: 1.595rem;
-}
-
-.footer {
-  background-color: #a0dbd0;
+* {
+  color: #000;
 }

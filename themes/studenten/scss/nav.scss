@@ -1,0 +1,23 @@
+/**
+*
+*/
+
+.title h1 {
+    color: $accent-color;
+    margin: 0.2rem;
+
+}
+
+.title p {
+    color: $font-color;
+    margin-bottom: 0.2rem;
+}
+
+.nav ul {
+    margin: 0.2rem;
+    padding: 0 auto;
+}
+
+.nav .active {
+    color: $accent-color;
+}

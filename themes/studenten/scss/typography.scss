@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+/**
+ * Grunden, baserad på Typography Handbook.
+ */
+
+html {
+    font-size: 100%;
+    width: 100%;
+    /* Dvs här behålls den fontstorlek användaren valt i sin webbläsare.*/
+}
+
+body {
+    line-height: $base-line-height;
+    /*Radavstånd bör vara mellan 1.2-1.5 av radhöjden. Anges som multipel.*/
+}
+
+li .active {
+    color: $accent-color;
+}
+
+h1 {
+    font-size: $base-font-size * 2.5;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+p {
+    font-size: $base-font-size;
+    /* em = i förhållande till förälder-element. Bör ej avvika för mkt från 1. 
+    Om man angett i px skulle inte användaren kunnat styra storleken.*/
+    margin-bottom: $magic-number;
+    /* Ger avståndet mellan styckena.*/
+    font-family: 'Roboto Slab', serif;
+}
+
+.main {
+    max-width: 60rem;
+    padding-left: 1.5rem;
+    /* rem = i förhållande till root-elementet, dvs html. */
+    padding-right: 1.5rem;
+    margin: 0 auto;
+    /* Anger här först top-bottom, sedan vänster-höger marginaler.*/
+    color: $font-color;
+    margin-bottom: $magic-number * 2;
+}
+
+@media (min-width: 64em) {
+    html {
+        font-size: 112.5%;
+    }
+}
