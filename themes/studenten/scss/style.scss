@@ -1,10 +1,16 @@
+
 @import '../../node_modules/normalize.css/normalize';
 @import 'variables';
-@import 'typography'; /* Läggs ganska högt i listan eftersom påverkar generellt */
+@import 'typography';  
 @import 'blockquotes';
 @import 'code';
 @import 'mobile-menu';
 @import 'nav';
 @import 'images';
 @import 'footer';
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
 
