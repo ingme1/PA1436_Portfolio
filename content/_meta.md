@@ -1,5 +1,5 @@
 ---
-Logo: image/avatar.png
+Logo: image/
 Tagline: Studenten
 Social:
     - title: Link till kursens github repo.
